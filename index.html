@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone </title>
+    <link rel="icon" type="image/x-icon" href="icon/image.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="spotify pointer" href="spotify">
+                <i class="fa-brands fa-spotify"></i>
+                <h2 class="m-l-1">Spotify</h2>
+            </div>
+
+            <div class="abc">
+                <div class="home">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+            </div>
+
+            <div class="search-cont search-cont-1">
+                <div class="search pointer">
+                    <butto class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </butto>
+                    <div class="input input-1">
+                        <input type="text" name="text" placeholder="What do you want to play?" class="text">
+                    </div>
+
+                    <div class="browse-icon browse-icon-1">
+                        <i class="fa-regular fa-window-maximize"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="xyz-cont"> -->
+            <div class="xyz">
+                <div class="text pointer">
+                    <button>Premium</button>
+                    <button>Support</button>
+                    <button>Dawnload</button>
+                </div>
+
+                <div class="vert">|</div>
+                <div class="ini  pointer">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <a href="" class="install">Install App</a>
+                </div>
+                <button class="sign-in pointer" onclick="logBack()">Sign in</button>
+                <button class="log-in pointer" onclick="logBack()">Log in</button>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="search-cont search-cont-2">
+        <div class="search">
+            <div class="-search-icon pointer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="input-2 input">
+                <input type="text" name="text" placeholder="What do you want to play?" class="text">
+            </div>
+
+            <div class="browse-icon browse-icon-2 pointer">
+                <i class="fa-regular fa-window-maximize"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main>
+        <aside>
+            <div class="aside-cont">
+                <div class="heading">
+                    <div class="cross pointer">&times;</div>
+                    <button class="song-list-img-button">
+                        <img class="invert pointer" src="svgs/hamburger.svg">
+                    </button>
+                    <div class="m-l-1">Your Library</div>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <div id="first-line">Create your first playlist</div>
+                        <div class="second-line">It's easy, we'll help you</div>
+                        <button class="button">Create Playlist</button>
+                    </div>
+
+                    <div class="box box2">
+                        <div id="first-line">Lets find some podcasts to follow</div>
+                        <div class="second-line">We'll keep you updated on new episodes</div>
+                        <button class="button">Browse podcasts</button>
+                    </div>
+                </div>
+
+
+
+                <div class="song-list p-l-1">
+                    <ol>
+                        <li>
+                            <i class="fa-solid fa-music"></i>
+                            <div class="song-info-cont m-l-1">
+                                <p>${songName.replaceAll("%20", " ")}</p>
+                                <p>- ${singerName.replaceAll("%20", " ").replace(".mp3", "")}</p>
+                            </div>
+                            <div>
+                                <span> Play Now</span>
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+            <!-- <div class="foot-cont"> -->
+            <div class="foot">
+                <span>Legal</span>
+                <span>Safety & Privacy Center</span>
+                <span>Privacy Policy</span>
+                <span>Cookies</span>
+                <span>About Ads</span>
+                <span>Accessibility</span>
+
+
+                <a href="" class="cookies">Cookies</a>
+
+                <button class="lang p-1 m-1">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>English</div>
+                </button>
+            </div>
+            <!-- </div> -->
+
+        </aside>
+
+
+
+        <section>
+            <cont class="section-cont">
+                <div class="menu pointer flex-center invert">
+                    <img class="pointer" src="svgs/hamburger.svg">
+                </div>
+
+                <div class="heading">
+                    <div>
+                        <a href="">Spotify Playlist</a>
+                    </div>
+                    <div>
+                        <a href="">Show all</a>
+                    </div>
+                </div>
+
+                <cont class="card-cont">
+                    <!-- <div data-folder="english" class="card p-1 m-1">
+                        <div class="img">
+                            <img src="images/download.jpeg" alt="">
+                            <span class="play pointer">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                        </div>
+                        <span>Pal Pal</span>
+                        <a href="">Afusic,</a>
+                        <a href="">aliSoomroMusic</a>
+                    </div> -->
+
+
+
+                </cont>
+
+                <footer>
+                    <div class="footer-cont">
+                        <div class="foot-boxes foot-box1">
+                            <ul>
+                                <p>Company</p>
+
+                                <a>About</a>
+                                <a>Jobs</a>
+                                <a>For the Record</a>
+                            </ul>
+                        </div>
+
+                        <div class="foot-boxes foot-box1">
+                            <ul>
+                                <p>Communities</p>
+
+                                <a>For Artists</a>
+                                <a>Developers</a>
+                                <a>Advertising</a>
+                                <a>Investors</a>
+                                <a>Vendors</a>
+                            </ul>
+                        </div>
+
+                        <div class="foot-boxes foot-box1">
+                            <ul>
+                                <p>Useful links</p>
+
+                                <a>Support</a>
+                                <a>Free Mobile App</a>
+                            </ul>
+                        </div>
+
+                        <div class="foot-boxes foot-box1">
+                            <ul>
+                                <p>Spotify Plans</p>
+
+                                <a>Premium Individual</a>
+                                <a>Premium Duo</a>
+                                <a>Premium Family</a>
+                                <a>Premium Student</a>
+                                <a>Spotify Free</a>
+                            </ul>
+                        </div>
+
+                        <div class="social-media">
+                            <a class="pointer"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="pointer"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="pointer"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+
+                    </div>
+
+                    <p>© 2025 Spotify AB</p>
+
+                </footer>
+            </cont>
+
+
+
+            <div class="playbar m-t-1">
+                <div class="song-info"></div>
+
+                <div class="song-buttons">
+                    <!-- <i class="fa-solid fa-backward-fast"></i> -->
+                    <i class="fa-solid fa-backward-step pointer" id="prev"></i>
+                    <img src="svgs/pause.svg" class="pointer" id="play"></img>
+                    <i class="fa-solid fa-forward-step pointer" id="next"></i>
+                    <!-- <i class="fa-solid fa-forward-fast"></i> -->
+                </div>
+
+                <div class="song-time">
+                    <span class="pqr"></span>
+                    <div class="volume-cont flex-space-evenly">
+                        <img class="invert pointer" src="svgs/volume.svg" alt="">
+                        <!-- <div class="range"> -->
+                        <input type="range" name="volume" class="pointer">
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="seekbar pointer">
+                    <div class="fill"></div>
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
