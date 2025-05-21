@@ -1,0 +1,205 @@
+main {
+    display: flex;
+    padding-top: 18px;
+    /* Space for the fixed navbar */
+    gap: 16px;
+    /* Creates space BETWEEN aside and section */
+}
+
+aside {
+    height: calc(100vh - 18px - 80px - 10px);
+    width: 400px;
+    background-color: #121212;
+    flex-shrink: 0;
+    color: white;
+    border-left: 2px solid gray;
+    border-radius: 12px;
+    z-index: 999;
+}
+
+.cross {
+    font-size: 40px;
+    position: absolute;
+    margin-right: 20px;
+    left: 350px;
+    display: none;
+}
+
+aside .heading {
+    height: 80px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+aside button {
+    background-color: #121212;
+}
+
+aside img {
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+
+aside img:hover {
+    display: inline-block;
+}
+
+
+aside .box {
+    height: 150px;
+    background-color: #1f1f1f;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+}
+
+aside .box2 {
+    height: 150px;
+}
+
+aside .box span:nth-child(2) {
+    font-size: 14px;
+}
+
+aside .box button {
+    width: 130px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 12px;
+    padding: 10px;
+}
+
+aside .box button {
+    transform: scale(1.2);
+}
+
+
+.song-list {
+    display: none;
+}
+
+.song-list ol,
+.boxes {
+    height: calc(100vh - 80px - 18px - 131.6px - 80px - 10px - (30px));
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #1f1f1f black;
+}
+
+.song-list ol li {
+    list-style-type: lower-roman;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 10px;
+}
+
+.song-list ol li .song-info-cont {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+
+.song-list ol li .song-info-cont p {
+    font-size: 14px;
+}
+
+.song-list ol li .song-info-cont p {
+    line-height: 25px;
+}
+ 
+.song-list ol li .play-cont {
+    width: 90px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 7px;
+} 
+
+.song-list ol li div span {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.song-list ol li i {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.song-list ol li span div:nth-child(2) {
+    color: #b3b3b3;
+}
+
+.foot {
+    color: #b3b3b3;
+    padding: 10px 25px;
+    line-height: 25px;
+    /* position: absolute; */
+    bottom: 10px;
+}
+
+.foot span {
+    font-size: 12px;
+    margin: 0 20px 0 0;
+}
+
+.foot a {
+    display: block;
+    /* margin-top: 20px; */
+    font-size: 14px;
+}
+
+.cookies {
+    color: #fff;
+    text-decoration: none;
+    /* margin-left: 25px; */
+}
+
+.cookies:hover {
+    text-decoration: underline;
+}
+
+.lang {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 25px;
+}
+
+.lang:hover {
+    border-color: white;
+    transform: scale(1.1);
+
+}
+
+.lang:hover {
+    transform: scale(1.05);
+}
+
+.lang div {
+    margin-left: 10px;
+}
+
+
+.list-cont {
+    height: 50%;
+}

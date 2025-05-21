@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    background-color: black;
+}
+
+header {
+    /* position: fixed; */
+    /* height: 64px; */
+    z-index: 10;
+    background-color: #000;
+    color: #b3b3b3;
+}
+
+.nav-bar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    /* or whatever your background is */
+    z-index: 999;
+    /* to keep it above other elements */
+    padding: 10px 10px;
+    /* optional for spacing */
+
+
+}
+
+.spotify {
+    display: flex;
+    align-items: center;
+}
+
+.spotify .fa-brands {
+    font-size: 35px;
+    /* height: 70px; */
+    margin-left: 10px;
+}
+
+.abc {
+    height: 35px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abc i:hover {
+    color: white;
+}
+
+.home {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.home i {
+    border: none;
+}
+
+.search-cont {
+    height: 35px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.search-cont-2 {
+    color: #b3b3b3;
+    display: none;
+    margin: 10px;
+    margin: 10px 48px 10px 15px;
+}
+
+.search {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.search .search-icon {
+    height: 100%;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.search .input {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* border-right: 2px solid white; */
+    margin: 10px;
+}
+
+.search .input input {
+    height: 100%;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.browse-icon {
+    height: 100%;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xyz {
+    width: 530px;
+    color: #b3b3b3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text button {
+    background-color: black;
+    color: #b3b3b3;
+    border: none;
+    margin-left: 10px;
+}
+
+.xyz .text button:hover,
+.xyz .sign-in:hover,
+.xyz a:hover,
+.xyz i:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+
+.ini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xyz .install {
+    text-decoration: none;
+    color: #b3b3b3;
+    margin-left: 5px;
+}
+
+.sign-in {
+    background-color: #1f1f1f;
+    color: #b3b3b3;
+    border: none;
+}
+
+.log-in {
+    height: 100%;
+    background-color: white;
+    color: #000;
+    border-radius: 24px;
+    padding: 8px 20px;
+}
+
+.text {
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* 
+
+*/
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* section {
+    width: 100%;
+    border-radius: 12px;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.section-cont {
+    height: calc(100vh - 48px - 70px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    color: #b3b3b3;
+    border-radius: 12px;
+    padding: 25px;
+    margin-left: 16px;
+}
+
+.menu {
+    display: none;
+    width: 80px;
+    height: 80px;
+    background-color: #aaa;
+    margin: 20px;
+}
+
+.menu img {
+    height: 20px;
+    width: 20px;
+}
+
+section .heading {
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+section .heading div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .heading div a {
+    text-decoration: none;
+}
+
+section .heading div a:hover {
+    text-decoration: underline;
+}
+
+section .heading div:first-child a {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section .heading div:nth-child(2) a {
+    color: #b3b3b3;
+}
+
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    line-height: 25px;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 7px;
+}
+
+.card:hover {
+    background-color: #1f1f1f;
+}
+
+.card .img {
+    height: 80%;
+    background-image: url("images/download.jpeg");
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card .img .play {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    bottom: -10px;
+    right: 8px;
+    transition: all 0.5s ease-out;
+}
+
+.card:hover .img .play {
+    opacity: 1;
+    bottom: 8px;
+}
+
+.play i {
+    text-align: center;
+}
+
+.card span {
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+}
+
+.card a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.playbar {
+    width: calc(100vw - 400px - 50px - 50px);
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    background-color: #373E24;
+    color: #fff;
+    padding: 10px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playbar .song-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+}
+
+.song-time {
+    float: right;
+    width: 115px;
+    padding: 0 5px;
+    margin-bottom: 30px;
+}
+
+.song-info {
+    width: 200px;
+    float: left;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+.playbar .song-buttons {
+    min-width: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.volume-cont {
+    width: 75px;
+}
+
+.volume-cont input {
+    height: 5px;
+    width: 50px;
+}
+
+#prev,
+#next,
+#play {
+    font-size: 25px;
+}
+
+#play {
+    height: 30px;
+    background-color: #fff;
+}
+
+.seekbar {
+    width: 97%;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    background-color: black;
+    border: 4px solid #04290c;
+    margin: 5px;
+}
+
+.seekbar .circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: wheat;
+    position: relative;
+    bottom: 6.5px;
+    transition: left 0.5s;
+    left: 0%;
+}
+
+footer {
+    background-color: #121212;
+    padding: 8px 32px 80px;
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+}
+
+.foot-boxes {
+    width: 160px;
+    margin: 0 24px 32px 0;
+}
+
+.foot-boxes ul {
+    line-height: 30px;
+}
+
+.foot-boxes p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.foot-boxes a {
+    color: #b3b3b3;
+    display: block;
+}
+
+.social-media {
+    width: 150px;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media a {
+    height: 35px;
+    width: 35px;
+    font-size: 25px;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.social-media a:hover {
+    background-color: #4e4d4d;
+}
+
+footer p:last-child {
+    color: #b3b3b3;
+}
+ */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+

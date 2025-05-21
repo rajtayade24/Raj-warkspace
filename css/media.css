@@ -1,0 +1,178 @@
+.menu {
+    display: none;
+    z-index: 99;
+}
+
+
+@media (max-width: 1000px) {
+
+    body {
+        padding: 0;
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    .search-cont-1 .search {
+        height: 100%;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    .browse-icon-1 {
+        display: none;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    .search-cont-2 .search {
+        width: 100%;
+    }
+
+    aside {
+        position: fixed;
+        top: calc((80px + 18px - 10px));
+        left: -100%;
+        transition: left 1s ease-out;
+    }
+
+    .playbar {
+        width: calc(100vw - 50px - (10px));
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .song-list {
+        display: block;
+    }
+
+    .box1,
+    .box2 {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .text {
+        display: none;
+    }
+
+    .seekbar {
+        width: 95%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    aside {
+        height: calc(100vh - 80px);
+        width: calc(100vw - 40px);
+        top: calc((80px - 10px));
+    }
+
+    .song-list,
+    .song-list ol {
+        height: calc(100vh - 80px - 80px - 156px);
+    }
+
+    .home,
+    .ini,
+    .vert {
+        display: none;
+    }
+
+    .cross {
+        left: 75vw;
+    }
+
+    #play {
+        height: 20px;
+        width: 20px;
+    }
+
+    #prev,
+    #next {
+        font-size: 20px;
+    }
+
+    .song-info,
+    .song-time {
+        font-size: 90%;
+        /* padding-bottom: 20px; */
+    }
+
+    .section-cont {
+        padding: 0;
+        margin: 0;
+    }
+
+    card-cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        height: 460px;
+    }
+
+    .card .img {
+        width: 100%;
+    }
+
+    .card span,
+    .card a {
+        font-size: 20px;
+    }
+
+    .card a {
+        padding-top: 20px;
+
+    }
+
+    .seekbar {
+        width: 93.5%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 77%;
+    }
+    .foot-boxes {
+     width: 100%;   
+        
+    }
+}
+
+@media (max-width:300px) {
+    .sign-in {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .search-cont-2 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.song-list {
+    color: #BBB;
+}
